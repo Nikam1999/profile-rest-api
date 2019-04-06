@@ -43,12 +43,12 @@ class HelloApiView(APIView):
 
         return Response({'method' : 'put'})
 
-    def patch(self, request ,pk=None):
+    def patch(self, request,pk=None):
         """Patch request , only update files provided in the request."""
 
         return Response({'method' : 'patch'})
 
-    def delete(self, request ,pk=None):
+    def delete(self, request,pk=None):
         """Deletes an object.."""
 
         return Response({'method' : 'delete'})
